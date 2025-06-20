@@ -99,6 +99,39 @@ export default function Contact() {
               <div>
                 <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                   Get in Touch
+                   <div className="flex gap-5 items-center mb-8">
+                <a
+                  href="https://github.com/ilhammenen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fab fa-github text-2xl"></i>
+                </a>
+                <a
+                  href="mailto:ilhammenen11@gmail.com"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fas fa-envelope text-2xl"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/ilhammenen?igsh=bmtqa2kwbnRiN3dy&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+
                 </h2>
                 <p className="text-gray-300 text-lg">
                   Have a question or want to work together? Drop us a message!
@@ -107,24 +140,41 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-purple-500/10 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
-                  </div>
+  <div className="bg-purple-500/10 p-3 rounded-lg"  >
+    <Mail className="w-6 h-6 text-purple-400" />
+  </div>
+  <div>
+    <h3 className="font-semibold">Email</h3>
+    <a
+      href="mailto:ilhammenen11@gmail.com"
+      className="text-gray-400 hover:underline"
+    >
+      ilhammenen11@gmail.com
+      
+    </a>
+  </div>
+</div>
+<div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-pink-500/10 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-pink-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
-                  </div>
-                </div>
+               <div className="flex items-center space-x-4">
+  <div className="bg-pink-500/10 p-3 rounded-lg">
+    <MapPin className="w-6 h-6 text-pink-400" />
+  </div>
+  <div>
+    <h3 className="font-semibold">Location</h3>
+    <a
+      href="https://www.google.com/maps/place/Universiti+Teknikal+Malaysia+Melaka/@2.2952,102.3196,17z"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:underline"
+    >
+      Universiti Teknikal Malaysia Melaka (UTeM)
+    </a>
+  </div>
+</div>
+
+
               </div>
             </div>
 

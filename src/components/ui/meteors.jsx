@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const Meteors = ({
-  number = 20
+  number = 40
 }) => {
   const [meteorStyles, setMeteorStyles] = useState([]);
 

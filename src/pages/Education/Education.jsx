@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import EducationLoader from "@/components/ui/EducationLoader";
 import {
-  Star,
   Award,
   Calendar,
   BookOpen,
-  GraduationCap,
   Trophy,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -15,24 +12,31 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "SPM (Sijil Pelajaran Malaysia)",
+      school: "Sekolah Menengah Kebangsaan Bandar Baru Darulaman",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
-      description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+      year: "2016 - 2020",
+      achievements: ["Graduated with Science Stream"],
+      skills: ["Mathematics", "Science", "English", "BM"],
+      description: "Strong academic foundation with passion in science and mathematics."
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Diploma in Science Mathematics",
+      school: "Universiti Pendidikan Sultan Idris",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+      year: "2021 - 2023",
+      achievements: ["CGPA: 3.53", "Dean's List Semester 1 & 6"],
+      skills: ["Calculus", "Statistics", "Programming", "Algorithms"],
+      description: "Comprehensive study in mathematics and computing with involvement in campus activities."
+    },
+    {
+      degree: "Bachelor in Computer Science Networking with Honours",
+      school: "Universiti Teknikal Malaysia Melaka",
+      mascot: "🎓",
+      year: "2024 - 2027 (Expected)",
+      achievements: ["GPA: 3.78", "Dean's List 4 semesters", "UTeM TV Editor", "Vortex Media Designer"],
+      skills: ["IPv4", "IPv6", "Fiber Optics", "Web Development", "TCP/IP", "UI/UX"],
+      description: "Focused on networking, system infrastructure and innovative research including 6G signal FYP."
     },
   ];
 
@@ -60,7 +64,6 @@ const EducationSection = () => {
 
   return (
     <section className="min-h-screen relative overflow-hidden py-40 bg-[#04081A]">
-      {/* Grid Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:50px_50px]" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#04081A] via-transparent to-[#04081A]" />
@@ -78,8 +81,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
+            From a love of mathematics to mastering networks — a story of continuous learning.
           </p>
         </motion.div>
 
@@ -105,9 +107,7 @@ const EducationSection = () => {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">{edu.mascot}</span>
-                    <h3 className="text-2xl font-bold text-white">
-                      {edu.degree}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-white">{edu.degree}</h3>
                   </div>
                   <p className="text-lg text-gray-300 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-teal-500" />

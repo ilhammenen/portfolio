@@ -5,45 +5,57 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "T-Shirt Design",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
+      "A creative T-shirt design showcasing custom artwork with a lightweight UI preview.",
     src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    link: "https://i.postimg.cc/bYZwmfh9/image.png",
     color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    githubLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/tshirt.html",
+    liveLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/tshirt.html",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "Sistem Pemantauan Aset Web App",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
+      "A responsive asset monitoring system built using PHP, MySQL, and Bootstrap for government use case demo.",
     src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    link: "https://i.postimg.cc/kgkmgdmc/image.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "#",
+    liveLink:
+      "https://webapp.utem.edu.my/student/bitc/b032410808/project/loginform.php",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "CGPA Calculator",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "🎓 A React-based CGPA calculator for students with a modern UI, supporting multi-semester input and real-time result display.",
     src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+    link: "https://i.postimg.cc/cL8Jmh1F/image.png",
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+    githubLink: "#",
+    liveLink: "#",
   },
   {
-    title: "CodeKori 🔥",
+    title: "Autocad House Project",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "A detailed 3D house model created using AutoCAD, showcasing architectural design concepts.",
     src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+    link: "https://i.postimg.cc/xTBfcmGM/image.png",
     color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    githubLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/autocad.html",
+    liveLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/autocad.html",
   },
+  {
+    title: "Logo Design ",
+    description:
+      "A collection of modern logo concepts crafted in Illustrator, demonstrating branding and visual identity skills.",
+    src: "house.jpg",
+    link: "https://i.postimg.cc/MG3qJjGn/image.png",
+    color: "#ed649e",
+    githubLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/logo.html",
+    liveLink: "https://webapp.utem.edu.my/student/bitc/b032410808/HCI%20outiside%20the%20web%20app%20dev/logo.html",
+  },
+
 ];
 
 export default function Projects() {
@@ -54,7 +66,6 @@ export default function Projects() {
   });
 
   useEffect(() => {
-    // Add specific styles for 1366x768 resolution
     const style = document.createElement("style");
     style.textContent = `
       @media screen and (width: 1366px) and (height: 768px),
@@ -71,7 +82,6 @@ export default function Projects() {
     `;
     document.head.appendChild(style);
 
-    // Resolution check function
     const checkResolution = () => {
       const isTargetResolution =
         window.innerWidth >= 1360 &&
@@ -158,9 +168,7 @@ function Card({
           transition: { duration: 0.3 },
         }}
       >
-        {/* Modern split card design */}
         <div className="w-full flex flex-col md:flex-row bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
-          {/* Image section - full width on mobile, 55% on desktop */}
           <div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
             <motion.img
               src={url}
@@ -170,8 +178,6 @@ function Card({
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.4 }}
             />
-
-            {/* Colored overlay on hover */}
             <motion.div
               className="absolute inset-0"
               style={{ backgroundColor: color, mixBlendMode: "overlay" }}
@@ -179,14 +185,11 @@ function Card({
               whileHover={{ opacity: 0.3 }}
               transition={{ duration: 0.3 }}
             />
-
-            {/* Project number */}
             <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-black/50 backdrop-blur-md text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium">
               Project {i + 1}
             </div>
           </div>
 
-          {/* Content section - full width on mobile, 45% on desktop */}
           <div className="w-full md:w-[45%] p-6 md:p-8 lg:p-10 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4 md:mb-6">
@@ -207,9 +210,7 @@ function Card({
 
             <div className="mt-4 md:mt-auto pt-4">
               <div className="w-full h-[1px] bg-gray-800 mb-4 md:mb-6" />
-
               <div className="flex items-center gap-4">
-                {/* GitHub Link */}
                 <motion.a
                   href={githubLink}
                   target="_blank"
@@ -239,7 +240,6 @@ function Card({
                   </span>
                 </motion.a>
 
-                {/* Live Link */}
                 <motion.a
                   href={liveLink}
                   target="_blank"
@@ -279,7 +279,6 @@ function Card({
   );
 }
 
-// Add PropTypes validation
 Card.propTypes = {
   i: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,

@@ -3,7 +3,6 @@ import IconCloud from "./ui/icon-cloud";
 const slugs = [
   "typescript",
   "javascript",
-  "dart",
   "java",
   "react",
   "flutter",
@@ -15,8 +14,6 @@ const slugs = [
   "nextdotjs",
   "prisma",
   "amazonaws",
-  "postgresql",
-  "firebase",
   "nginx",
   "vercel",
   "testinglibrary",
@@ -29,9 +26,14 @@ const slugs = [
   "gitlab",
   "visualstudiocode",
   "androidstudio",
-  "sonarqube",
   "figma",
+  "adobepremierepro",       // ✅ new
+  "adobeaftereffects",      // ✅ new
+  "blender", 
+  "autocad"               // ✅ new
+  // AutoCAD is not available in simple-icons
 ];
+
 
 function IconCloudDemo() {
   return (

@@ -16,19 +16,20 @@ export default function About() {
                   src={HeroImg}
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
-                  width={1207}
-                  height={929}
+                  width={300}
+                  height={300}
                 />
               </div>
             </div>
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
+                Hello! I'm Ilham Ramli, a passionate JavaScript developer
                 specializing in creating innovative web solutions and
                 user-friendly interfaces.{" "}
                 <span className="font-bold text-white">
-                  As the creator of the OlovaJS UI Framework
+                Hello! I'm Ilham, a passionate Network Specialist, Interior Designer, and Web Designer. 
+                I blend technical skill with creative vision to build strong connections, both in networks and in design.
                 </span>
                 , I'm dedicated to simplifying development workflows.
               </p>
@@ -36,7 +37,10 @@ export default function About() {
                 My focus is on making web development faster, easier, and
                 accessible to all developers. Currently, I'm expanding into
                 backend development to grow as a full-stack developer and create
-                seamless, robust web applications.
+                seamless, web applications.
+              </p>
+              <p>
+                When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes.
               </p>
 
               <div className="pt-6">
@@ -51,17 +55,11 @@ export default function About() {
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
-                      Nazmul Hossain, Creator of
+                     Muhammad Ilham Bin Mohd Ramli
                     </cite>
                     <div className="flex items-center gap-2">
-                      <img
-                        className="h-5 w-fit"
-                        src={OlovaLogo}
-                        alt="Olova Logo"
-                        height="20"
-                        width="auto"
-                      />
-                      <span className="text-white">OlovaJS</span>
+                      
+                      <span className="text-white"></span>
                     </div>
                   </div>
                 </blockquote>
